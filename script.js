@@ -20,6 +20,7 @@ var onScroll = function() {
         // firstArticle.style.marginTop = "220px";
 
     } else {
+      img.style.marginTop = "0";
         header.style.position = "relative";
         header.style.height = "110px";
         headerContent.style.height = "110px";

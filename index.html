@@ -1,86 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
-    <title>Projet Flex</title>
-    <link rel="stylesheet" href="master.css">
-  </head>
-  <body id="moi">
-    <div>
-      <span id="imgfond"><img src="data/eCommerce-Header-5.png" alt="" /></span>
+
+    <title>Site Display: flex</title>
+</head>
+<body>
+  <header>
+    <div id="header" class="container">
+
+        <nav>
+            <ul>
+                <a href="#1">
+                    <li class="animated fadeIn"><span class="navtext">Distribution</span></li>
+                </a>
+                <a href="#2">
+                    <li class="animated fadeIn"><span class="navtext">Alignement</span></li>
+                </a>
+                <a href="#3">
+                    <li class="animated fadeIn"><span class="navtext">Réorganisation</span></li>
+                </a>
+                <a href="#4">
+                    <li class="animated fadeIn"><span class="navtext">Gestion des espaces</span></li>
+                </a>
+            </ul>
+        </nav>
     </div>
+  </header>
+  <img id="img" src="header.jpg"/>
+  <script type="text/javascript" src="script.js"></script>
 
-    <nav id="test">
-        <div class="menu" onclick="menudisplay()">
-        </div>
-        <div class="param">
-        </div>
-        <a href="#bonjour">bonjour</a>
-        <a href="#deuxiemePartie">deuxieme partie</a>
-        <a href="#fin">fin</a>
-    </nav>
-    <div class="principal">
-        <div class="article" id="bonjour">
-          <p>titre</p>
-          <p>truc a dire</p>
-          <p>conclusion</p>
-          <p>Is it working ??</p>
-        </div>
-        <div class="article">
-          <p>titre</p>
-          <p>truc a dire</p>
-          <p>conclusion</p>
-        </div>
-        <div class="article">
-          <p>titre</p>
-          <p>truc a dire</p>
-          <p>conclusion</p>
-        </div>
-        <div class="huge">
+  <section id="présentation">
+        <h1>Le display Flex en CSS</h1>
+        Le Display Flex est un outil qui permet de créer des "modèles de boîte" flexibles. On distingue 4 propriétés possibles</p>
+        <ul>
+            <li>La distribution,</li>
+            <li>Les alignements,</li>
+            <li>La réorganisation,</li>
+            <li>La gestion des espaces.</li>
+        </ul>
+        <p>Le module flexbox, est reconnu par la plupart des navigateurs (en cas de doute, la vérification est possible grâce à <a href="http://caniuse.com/#feat=flexbox">CaniUse.com</a>.)</p>
+  </section>
 
-        </div>
-        <div class="anchor" id="deuxiemePartie">
+  <section id="distribution">
+        <h2>Distribution et axe principal</h2>
+        <h3>Distribution (flex-direction)</h3>
+        <p>La distribution permet de gérer l'affichage horizontal ou vertical des éléments</p>
+        <ul>
+            <li>row: distribution horizontale par défaut;</li>
+            <li>row-reverse: distribution horizontale inversée;</li>
+            <li>column: distribution verticale;</li>
+            <li>column-reverse: distribution verticale inversée.</li>
+        </ul>
+        <h3>Axe principal (flex-wrap)</h3>
+        <p>Le flex-wrap permet quant à lui de définir si des éléments sur une seule ligne ou colonne selon l'axe principal.</p>
+          <ul>
+            <li>nowrap : les éléments ne passent pas à la ligne par défaut;</li>
+            <li>wrap : les éléments passent à la ligne dans le sens de la lecture;</li>
+            <li>wrap-reverse : les éléments passent à la ligne dans le sens inverse.</li>
+          </ul>
+    </section>
+    <section id="alignement">
+          <h2>Alignements:</h2>
+            <p>permet de gérer les alignements et centrage avec ces deux axes, axe principal est géré via la propriété ( justify-content ) et l'axe secondaire géré ( align -items ).</p>
 
-        </div>
-        <div class="article">
-          <p>titre</p>
-          <p>truc a dire</p>
-          <p>conclusion</p>
-        </div>
-        <div class="huge">
+          <h3>Justify-content (axe principal)</h3>
+            <p>Axe de lecture principal est défini par cette propriété</p>
+              <ul>
+                <li>flex-start: positionne les éléments au début dans le sens de la lecture</li>
+                <li>flex-end: positionne les éléments à la fin</li>
+                <li>center: positionne les éléments au centre</li>
+                <li>space-between: positionne les éléments de façon étiré</li>
+                <li>space-around: même procédé que "space-between" excepté qu'il laisse des espaces entre les extrémités.</li>
+              </ul>
 
-        </div>
-        <div class="article" >
-          <p>titre</p>
-          <p>truc a dire</p>
-          <p>conclusion</p>
-        </div>
-        <div class="article">
-          <p>titre</p>
-          <p>truc a dire</p>
-          <p>conclusion</p>
-        </div>
-        <div class="anchor" id="fin">
+          <h3>Align-items (axe secondaire)</h3>
+              <ul>
+                <li>flex-start: positionne les éléments au début</li>
+                <li>flex-end: positionne les éléments à la fin</li>
+                <li>center: positionne les éléments au centre</li>
+                <li>baseline: identique à flex-start</li>
+                <li>stretch: positionne et étire les éléments dans l'espace disponible</li>
+            </ul>
+            <p>Align-self (traitement des cas particuliers)</p>
+    </section>
+    <section id="réorganisation">
+                    <!--   margin avec flexbox  -->
 
-        </div>
-        <div class="article">
-          <p>titre</p>
-          <p>truc a dire</p>
-          <p>conclusion</p>
-        </div>
-        <footer>
+            <h2>Ordonnancement</h2>
+            <p>L'ordonnancement permet de réordonner les éléments de façon indépendante avec la propriété "order"</p>
+            <p>Celle-ci s'applique aux flex-items avec des valeurs numériques.</p>
+            EXEMPLE
 
-          <div class="presentationEquipe">
+                    <!-- Flexibilité -->
+          <h2>Flexibilité</h2>
+                    <p>La propriété flex à un raccourci de trois propriétés: flex- ( grow; shrink; basis ).
+                        <li>grow: c'est la capacité pour un élément de s'étirer dans l'espace restant.</li>
+                        <li>shrink: c'est la capacité pour un élément de se contracter si nécessaire.</li>
+                        <li>basis: c'est la taille initiale des éléments avant que l'espace ne soit distribué.</li>
+                    </p>
+    </section>
 
-          </div>
-          <div class="about">
-
-          </div>
-
-        </footer>
+        </p>
     </div>
-    <script src="jquery.js" charset="utf-8"></script>
-    <script src="script.js" charset="utf-8"></script>
-    <script src="scriptJq.js" charset="utf-8"></script>
-  </body>
+    <footer>
+
+  </footer>
+
+</body>
+
 </html>

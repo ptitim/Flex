@@ -1,27 +1,26 @@
-function menudisplay(){
 
-    var a = document.getElementsByClassName('param');
-    a[0].style.animationName="slide-left";
-    setTimeout(function(){document.addEventListener("click",hidemenu)},10);
-    setTimeout(function(){a[0].style.width = "80vw";},10);
+// ----- script navbar ----- //
+var header = document.querySelector('header');
+var headerContent = document.getElementById('header');
+var firstArticle = document.querySelectorAll('article')[0];
 
+var scrollY = function() {
+    var supportPageOffset = window.pageXOffset !== undefined;
+    var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+    return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
 };
+var onScroll = function() {
+    if (scrollY() > 40) {
+        header.style.position = "fixed";
+        header.style.height = "15%";
+        headerContent.style.height = "10%";
+        firstArticle.style.marginTop = "220px";
 
-function hidemenu(){
-    var a = document.getElementsByClassName('param');
-    a[0].style.animationName= "";
-    a[0].style.width = "0vw";
-};
-
-document.addEventListener("scroll",truc);
-
-function truc(event){
-    // console.log(event);
-    var e = document.getElementById('test');
-    if(event.pageY >= 68){
-        e.style.position = "fixed";
-        e.style.top = "0";
-    }else{
-        e.style.position = "relative";
+    } else {
+        header.style.position = "relative";
+        header.style.height = "110px";
+        headerContent.style.height = "110px";
+        firstArticle.style.marginTop = "0px";
     }
 };
+window.addEventListener('scroll', onScroll);

@@ -1,0 +1,17 @@
+h2 {
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  margin: 0px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14px;
+}
+
+li {
+  list-style: none;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14px;
+}

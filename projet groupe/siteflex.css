@@ -1,0 +1,63 @@
+ul {
+  padding: 0px;
+}
+
+h1 {
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14px;
+  margin: 3px;
+}
+
+li {
+  list-style: none;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.center {
+  max-width: 650px;
+  height: auto;
+  margin: auto;
+}
+
+.conteneur {
+  width: 570px;
+  heigth: 250px;
+  display: flex;
+  margin: auto;
+}
+
+.element:nth-child(1) {
+  width: 125px;
+  height: 62px;
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+}
+
+.element:nth-child(2) {
+  width: 125px;
+  height: 62px;
+  background-color: rgb(5, 0, 255);
+  text-align: center;
+}
+
+.element:nth-child(3) {
+width: 125px;
+height: 62px;
+background-color: rgb(242, 255, 0);
+text-align: center;
+}
+
+.element:nth-child(4) {
+  width: 125px;
+  height: 62px;
+  background-color: rgb(0, 255, 3);
+  text-align: center;
+}

@@ -50,6 +50,7 @@ header #header nav ul a {
 	line-height: 50px;
   background-color: #FFF;
   border-radius: 10px;
+  margin-right: 2vw;
 }
 
 header #header nav ul a:hover {

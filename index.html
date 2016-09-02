@@ -7,22 +7,27 @@
 
     <title>Site Display: flex</title>
 </head>
-<body>
+<body class="thing">
   <header>
     <div id="header" class="container">
 
         <nav>
             <ul>
-                <a href="#distribution" class="test">
+                <!-- <a href="#distribution" class="test" onclick="autoScroll(this)">
+                    <li class="animated fadeIn"><span class="navtext">Distribution</span></li>
+                     href="#alignement"
+                </a> -->
+                <a class="test" onclick="autoScroll('distribution')">
                     <li class="animated fadeIn"><span class="navtext">Distribution</span></li>
                 </a>
-                <a href="#alignement" class="test">
+
+                <a class="test" onclick="autoScroll('alignement')">
                     <li class="animated fadeIn"><span class="navtext">Alignement</span></li>
                 </a>
-                <a href="#reorganisation" class="test">
+                <a class="test" onclick="autoScroll('reorganisation')">
                     <li class="animated fadeIn"><span class="navtext">Réorganisation</span></li>
                 </a>
-                <a href="#4" class="test">
+                <a class="test" onclick="autoScroll(this)">
                     <li class="animated fadeIn"><span class="navtext">Gestion des espaces</span></li>
                 </a>
             </ul>
@@ -107,8 +112,11 @@
     <footer>
 
   </footer>
-  <script src="jquery.js" charset="utf-8"></script>
-  <script src="scriptJq.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
+  <script src="testgsap.js" charset="utf-8"></script>
+  <!-- <script src="jquery.js" charset="utf-8"></script>
+  <script src="scriptJq.js" charset="utf-8"></script> -->
   <script type="text/javascript" src="script.js"></script>
 </body>
 

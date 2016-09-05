@@ -129,3 +129,37 @@ footer img {
   height: 70%;
   margin-left: 94%;
 }
+
+
+/*Css destinée au exemple*/
+.exemple{
+    width: 23vmax;
+    display: flex;
+}
+
+#exemple1{
+    height: auto;
+    overflow: hidden;
+    border: 1vw solid black;
+}
+
+.case{
+    width: 5vmax;
+    height: 5vmax;
+}
+
+.orange{
+    background-color: orange;
+}
+.rouge{
+     background-color: red;
+}
+.vert{
+    background-color: green;
+}
+.jaune{
+    background-color: yellow;
+}
+.bleu{
+    background-color: blue;
+}

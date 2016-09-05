@@ -7,7 +7,7 @@
 
     <title>Site Display: flex</title>
 </head>
-<body class="thing">
+<body class="thing" onload="init()">
   <header>
     <div id="header" class="container">
 
@@ -66,6 +66,20 @@
             <li>wrap-reverse : les éléments passent à la ligne dans le sens inverse.</li>
           </ul>
     </section>
+
+    <input type="button" name="flexdir" value="flex-direction" onclick="flexDir('exempleDistrib','flexDir1')">
+    <p>flex-direction: <span id="flexDir1"></span></p>
+    <input type="button" name="wrap" value="wrap" onclick="wraper()">
+    <p>Wrap: <span id="wrap"></span></p>
+
+    <div class="exemple" id="exempleDistrib">
+      <div class="case orange"></div>
+      <div class="case rouge"></div>
+      <div class="case vert"></div>
+      <div class="case jaune"></div>
+      <div class="case bleu"></div>
+    </div>
+
     <section id="alignement">
           <h2>Alignements:</h2>
             <p>permet de gérer les alignements et centrage avec ces deux axes, axe principal est géré via la propriété ( justify-content ) et l'axe secondaire géré ( align -items ).</p>
@@ -112,12 +126,13 @@
     <footer>
 
   </footer>
+
+  <!--importation des script  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
   <script src="testgsap.js" charset="utf-8"></script>
-  <!-- <script src="jquery.js" charset="utf-8"></script>
-  <script src="scriptJq.js" charset="utf-8"></script> -->
-  <script type="text/javascript" src="script.js"></script>
+  <script src="script.js"></script>
+  <script src="exemple.js"></script>
 </body>
 
 </html>

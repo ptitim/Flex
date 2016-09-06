@@ -31,7 +31,7 @@ function wraper(){
 function bonjour(){
   var ele = document.getElementById('exempleAlign');
   var texte = document.getElementById('align');//element htmln affichent l'attribut actuel
-  var wrapAtr = ['flex-start', 'flex-end', 'center', 'space-between'];//attribut du style flew-wrap
+  var alignAttr = ['flex-start', 'flex-end', 'center', 'space-between'];//attribut du style flew-wrap
   var actu = ele.style.justifyContent;//style actuel
 
   if(actu == ""){
@@ -39,11 +39,13 @@ function bonjour(){
   }
   console.log(actu);
   // TODO: corriger le bug renvoie index == -1
-  var index = wrapAtr.indexOf(actu);//index (pour le tableau d'attribut)
+  var index = alignAttr.indexOf(actu);//index (pour le tableau d'attribut)
+  console.log(index);
   index++;
-  index >= wrapAtr.length ? index = 0 : index = index;//remise a 0 de 'l'index si il dépasse du tableau
-  ele.style.flexWrap = wrapAtr[index];//application du nouveaux style
-  texte.innerText = wrapAtr[index];//affichage (textuel) du nouveaux style
+  console.log(index);
+  index >= alignAttr.length ? index = 0 : index = index;//remise a 0 de 'l'index si il dépasse du tableau
+  ele.style.justifyContent = alignAttr[index];//application du nouveaux style
+  texte.innerText = alignAttr[index];//affichage (textuel) du nouveaux style
 }
 
 function init(){

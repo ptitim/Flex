@@ -1,4 +1,4 @@
-// Cahque fonction sera pour un exemple, exepter le FlexDir qui s'apliquera sur l'id envoyer en parametre
+// Chaque fonction sera pour un exemple, exepter le FlexDir qui s'apliquera sur l'id envoyer en parametre
 function flexDir(id, id2){
     var ele = document.getElementById(id);//recuperation de l'element a changez d'attribut css
     var afgAttribut = document.getElementById(id2);//element html pour afficher l'etat de l'attribut css

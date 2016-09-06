@@ -67,22 +67,27 @@
           </ul>
     </section>
 
-    <input type="button" name="flexdir" value="flex-direction" onclick="flexDir('exempleDistrib','flexDir1')">
-    <p>flex-direction: <span id="flexDir1"></span></p>
-    <input type="button" name="wrap" value="wrap" onclick="wraper()">
-    <p>Wrap: <span id="wrap"></span></p>
+    <section id="wrapExemple">
+          <div id="buttons">
+              <input type="button" name="flexdir" value="flex-direction" onclick="flexDir('exempleDistrib','flexDir1')">
+                <p>  Flex-direction : <span id="flexDir1"></span></p>
 
-    <div class="exemple" id="exempleDistrib">
-      <div class="case orange"></div>
-      <div class="case rouge"></div>
-      <div class="case vert"></div>
-      <div class="case jaune"></div>
-      <div class="case bleu"></div>
-    </div>
+              <input type="button" name="wrap" value="wrap" onclick="wraper()">
+                <p>  Wrap : <span id="wrap"></span></p>
+          </div>
+
+          <div class="exemple" id="exempleDistrib">
+              <div class="case un">1</div>
+              <div class="case deux">2</div>
+              <div class="case trois">3</div>
+              <div class="case quatre">4</div>
+              <div class="case cinq">5</div>
+          </div>
+    </section>
 
     <section id="alignement">
           <h2>Alignements:</h2>
-            <p>permet de gérer les alignements et centrage avec ces deux axes, axe principal est géré via la propriété ( justify-content ) et l'axe secondaire géré ( align -items ).</p>
+            <p>permet de gérer les alignements et centrage avec ces deux axes, axe principal est géré via la propriété ( justify-content ) et l'axe secondaire géré (align-items).</p>
 
           <h3>Justify-content (axe principal)</h3>
             <p>Axe de lecture principal est défini par cette propriété</p>
@@ -119,7 +124,7 @@
                     <!--   margin avec flexbox  -->
 
             <h2>Ordonnancement</h2>
-            <p>L'ordonnancement permet de réordonner les éléments de façon indépendante avec la propriété "order"</p>
+            <p>L'ordonnancement permet de réordonner les éléments de façon indépendante avec la propriété "order".</p>
             <p>Celle-ci s'applique aux flex-items avec des valeurs numériques.</p>
             EXEMPLE
 

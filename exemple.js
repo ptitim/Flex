@@ -14,20 +14,38 @@ function flexDir(id, id2){
 
 function wraper(){
     var ele = document.getElementById('exempleDistrib');
-    var texte = document.getElementById('wrap');
-    var wrapAtr = ['wrap', 'wrap-reverse', 'nowrap'];
-    var actu = ele.style.flexWrap;
+    var texte = document.getElementById('wrap');//element htmln affichent l'attribut actuel
+    var wrapAtr = ['wrap', 'wrap-reverse', 'nowrap'];//attribut du style flew-wrap
+    var actu = ele.style.flexWrap;//style actuel
 
     if(actu == ""){
         ele.style.flexWrap = "wrap";
     }
-    var truc = wrapAtr.indexOf(actu);//index
-    truc++;
-    truc >= wrapAtr.length ? truc = 0 : truc = truc;
-    ele.style.flexWrap = wrapAtr[truc];
-    texte.innerText = wrapAtr[truc];
+    var index = wrapAtr.indexOf(actu);//index (pour le tableau d'attribut)
+    index++;
+    index >= wrapAtr.length ? index = 0 : index = index;//remise a 0 de 'l'index si il dépasse du tableau
+    ele.style.flexWrap = wrapAtr[index];//application du nouveaux style
+    texte.innerText = wrapAtr[index];//affichage (textuel) du nouveaux style
 }
+
+function align(){
+  var ele = document.getElementById('exempleAlign');
+  var texte = document.getElementById('align');//element htmln affichent l'attribut actuel
+  var wrapAtr = ['flex-start', 'flex-end', 'center', 'space-between'];//attribut du style flew-wrap
+  var actu = ele.style.flexWrap;//style actuel
+
+  if(actu == ""){
+      ele.style.flexWrap = "flex-start";
+  }
+  var index = wrapAtr.indexOf(actu);//index (pour le tableau d'attribut)
+  index++;
+  index >= wrapAtr.length ? index = 0 : index = index;//remise a 0 de 'l'index si il dépasse du tableau
+  ele.style.flexWrap = wrapAtr[index];//application du nouveaux style
+  texte.innerText = wrapAtr[index];//affichage (textuel) du nouveaux style
+}
+
 function init(){
   flexDir('exempleDistrib','flexDir1');
   wraper();
+  align();
 }

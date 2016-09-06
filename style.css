@@ -131,35 +131,67 @@ footer img {
 }
 
 
-/*Css destinée au exemple*/
+/*Css destinée aux exemples*/
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+}
+
+#buttons input {
+  width: auto;
+  height: 3vw;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 15px;
+  border-radius: 2px;
+  background-color: #FFF;
+  border-style: groove;
+}
+#buttons input:hover {
+  cursor: pointer;
+  background-color: black;
+	color: #FFF;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+#flexDir1, #wrap {
+  font-weight: bold;
+  padding-right: 50%;
+}
+
 .exemple{
     width: 23vmax;
     display: flex;
 }
 
-#exemple1{
+#exempleDistrib{
     height: auto;
     overflow: hidden;
-    border: 1vw solid black;
+    border: 0.5vw solid grey;
 }
 
 .case{
     width: 5vmax;
     height: 5vmax;
+    border: 0.1vw solid black;
 }
 
-.orange{
-    background-color: orange;
+.un{
+    background-color: #3b5998;
 }
-.rouge{
-     background-color: red;
+.deux{
+     background-color: #8b9dc3;
 }
-.vert{
-    background-color: green;
+.trois{
+    background-color: #dfe3ee;
 }
-.jaune{
-    background-color: yellow;
+.quatre{
+    background-color: #f7f7f7;
 }
-.bleu{
-    background-color: blue;
+.cinq{
+    background-color: #ffffff;
 }

@@ -28,15 +28,17 @@ function wraper(){
     texte.innerText = wrapAtr[index];//affichage (textuel) du nouveaux style
 }
 
-function align(){
+function bonjour(){
   var ele = document.getElementById('exempleAlign');
   var texte = document.getElementById('align');//element htmln affichent l'attribut actuel
   var wrapAtr = ['flex-start', 'flex-end', 'center', 'space-between'];//attribut du style flew-wrap
-  var actu = ele.style.flexWrap;//style actuel
+  var actu = ele.style.justifyContent;//style actuel
 
   if(actu == ""){
-      ele.style.flexWrap = "flex-start";
+      ele.style.justifyContent = "flex-start";
   }
+  console.log(actu);
+  // TODO: corriger le bug renvoie index == -1
   var index = wrapAtr.indexOf(actu);//index (pour le tableau d'attribut)
   index++;
   index >= wrapAtr.length ? index = 0 : index = index;//remise a 0 de 'l'index si il dépasse du tableau
@@ -47,5 +49,5 @@ function align(){
 function init(){
   flexDir('exempleDistrib','flexDir1');
   wraper();
-  align();
+  bonjour();
 }

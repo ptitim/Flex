@@ -25,10 +25,10 @@
                     <li class="animated fadeIn"><span class="navtext">Alignement</span></li>
                 </a>
                 <a class="test" onclick="autoScroll('reorganisation')">
-                    <li class="animated fadeIn"><span class="navtext">Réorganisation</span></li>
+                    <li class="animated fadeIn"><span class="navtext">Ordonnancement</span></li>
                 </a>
                 <a class="test" onclick="autoScroll(this)">
-                    <li class="animated fadeIn"><span class="navtext">Gestion&nbspdes&nbspespaces</span></li>
+                    <li class="animated fadeIn"><span class="navtext">Flexibilité</span></li>
                 </a>
             </ul>
         </nav>
@@ -38,33 +38,35 @@
 
   <section id="presentation">
         <h1>Le display Flex en CSS</h1>
-        Le Display Flex est un outil qui permet de créer des "modèles de boîte" flexibles. On distingue 4 propriétés possibles</p>
+        Le Display Flex est un outil qui permet de créer des "modèles de boîte" flexibles. On distingue 4 propriétés possibles :</p>
         <ul>
             <li>La distribution,</li>
             <li>Les alignements,</li>
-            <li>La réorganisation,</li>
+            <li>L'ordonnancement,</li>
             <li>La gestion des espaces.</li>
         </ul>
-        <p>Le module flexbox, est reconnu par la plupart des navigateurs (en cas de doute, la vérification est possible grâce à <a href="http://caniuse.com/#feat=flexbox">CaniUse.com</a>.)</p>
+        <p>Le module flexbox est reconnu par la plupart des navigateurs (en cas de doute, la vérification est possible grâce à <a href="http://caniuse.com/#feat=flexbox" target="_blank">ce site</a>.</p>
   </section>
 
   <section id="distribution">
         <h2>Distribution et axe principal</h2>
         <h3>Distribution (flex-direction)</h3>
-        <p>La distribution permet de gérer l'affichage horizontal ou vertical des éléments</p>
+        <p>La distribution permet de gérer l'affichage horizontal ou vertical des éléments. Elle peut être définie par ces propriétés :</p>
         <ul>
-            <li>row: distribution horizontale par défaut;</li>
-            <li>row-reverse: distribution horizontale inversée;</li>
-            <li>column: distribution verticale;</li>
-            <li>column-reverse: distribution verticale inversée.</li>
+            <li>row : distribution horizontale (propriété par défaut);</li>
+            <li>row-reverse : distribution horizontale inversée;</li>
+            <li>column : distribution verticale;</li>
+            <li>column-reverse : distribution verticale inversée.</li>
         </ul>
+
         <h3>Axe principal (flex-wrap)</h3>
         <p>Le flex-wrap permet quant à lui de définir si des éléments sur une seule ligne ou colonne selon l'axe principal.</p>
           <ul>
-            <li>nowrap : les éléments ne passent pas à la ligne par défaut;</li>
+            <li>nowrap : les éléments ne passent pas à la ligne (propriété par défaut);</li>
             <li>wrap : les éléments passent à la ligne dans le sens de la lecture;</li>
             <li>wrap-reverse : les éléments passent à la ligne dans le sens inverse.</li>
           </ul>
+
     </section>
 
     <section id="wrapExemple">
@@ -83,20 +85,24 @@
               <div class="case quatre">4</div>
               <div class="case cinq">5</div>
           </div>
+
+          <p>Il existe aussi une propriété raccourcie : <strong>flex-flow</strong>, qui a la particularité de regrouper flex-direction et flex-wrap.<br>
+          Exemple : <code>flex-flow: row-reverse wrap;</code><br>
+          Dans ce cas, on place d'abord la propriété gérant la flex-direction puis celle gérant le flex-wrap.</p>
     </section>
 
     <section id="alignement">
           <h2>Alignements:</h2>
-            <p>permet de gérer les alignements et centrage avec ces deux axes, axe principal est géré via la propriété ( justify-content ) et l'axe secondaire géré (align-items).</p>
+            <p>Deux propriétés permettent de gérer l'alignement et le centrage avec deux axes: l'axe principal (qui est géré via la propriété <strong>justify-content</strong>) et l'axe secondaire (qui est géré par <strong>align-items</strong>).</p>
 
           <h3>Justify-content (axe principal)</h3>
-            <p>Axe de lecture principal est défini par cette propriété</p>
+            <p>L'axe de lecture principal est défini par ces propriétés :</p>
               <ul>
-                <li>flex-start: positionne les éléments au début dans le sens de la lecture</li>
-                <li>flex-end: positionne les éléments à la fin</li>
-                <li>center: positionne les éléments au centre</li>
-                <li>space-between: positionne les éléments de façon étiré</li>
-                <li>space-around: même procédé que "space-between" excepté qu'il laisse des espaces entre les extrémités.</li>
+                <li>flex-start: les éléments sont regroupés au début, dans le sens de lecture (propriété par défaut);</li>
+                <li>flex-end: positionne les éléments à la fin du sens de lecture;</li>
+                <li>center: positionne les éléments au centre;</li>
+                <li>space-between: les éléments sont répartis de manière égale sur la ligne;</li>
+                <li>space-around: même procédé que "space-between" excepté qu'il laisse le même espacement entre chaque éléments.</li>
               </ul>
 
               <input type="button" name="align" value="alignement" onclick="bonjour()">
@@ -111,30 +117,34 @@
               </div>
 
           <h3>Align-items (axe secondaire)</h3>
+          <p>La propriété align-items permet de définir la façon dont les éléments sont disposés sur l'axe transversal.</p>
               <ul>
-                <li>flex-start: positionne les éléments au début</li>
-                <li>flex-end: positionne les éléments à la fin</li>
-                <li>center: positionne les éléments au centre</li>
-                <li>baseline: identique à flex-start</li>
-                <li>stretch: positionne et étire les éléments dans l'espace disponible</li>
+                <li>flex-start: le premier bord (ou le début) des éléments est placé au début de la ligne transversale;</li>
+                <li>flex-end: le dernier bord (fin) des éléments est placé à la fin de la ligne transversale;</li>
+                <li>center: positionne les éléments au centre de la ligne transversale;</li>
+                <li>baseline: les éléments sont répartis de manière à ce que la ligne de base s'aligne;</li>
+                <li>stretch: étire les éléments dans l'espace disponible (le conteneur).</li>
             </ul>
-            <p>Align-self (traitement des cas particuliers)</p>
+            <p><strong>Point sur la propriété Align-self : </strong>elle permet de supplanter la valeur d'align-items pour un ou plusieurs éléments spécifiques. Align-self utilise les mêmes valeurs qu'align-items.</p>
     </section>
     <section id="reorganisation">
                     <!--   margin avec flexbox  -->
 
             <h2>Ordonnancement</h2>
             <p>L'ordonnancement permet de réordonner les éléments de façon indépendante avec la propriété "order".</p>
-            <p>Celle-ci s'applique aux flex-items avec des valeurs numériques.</p>
+            <p>Celle-ci s'applique aux flex-items avec des valeurs numériques.<br>
+              La propriété order s'écrit comme suit : <code>order: (nombre entier)</code>
+            </p>
             EXEMPLE
 
                     <!-- Flexibilité -->
           <h2>Flexibilité</h2>
-                    <p>La propriété flex à un raccourci de trois propriétés: flex- ( grow; shrink; basis ).
-                        <li>grow: c'est la capacité pour un élément de s'étirer dans l'espace restant.</li>
-                        <li>shrink: c'est la capacité pour un élément de se contracter si nécessaire.</li>
-                        <li>basis: c'est la taille initiale des éléments avant que l'espace ne soit distribué.</li>
-                    </p>
+                    <p>La flexibilité est le fondement même du display Flex et cela se fait grâce à la propriété flex.</p>
+                    <p>La propriété flex est un raccourci de trois propriétés : </p>
+                        <li>flex-grow : capacité pour un élément de s'étirer dans l'espace restant;</li>
+                        <li>flex-shrink : capacité pour un élément de se contracter si nécessaire;</li>
+                        <li>flex-basis : taille initiale des éléments avant que l'espace ne soit distribué.</li>
+
     </section>
 
         </p>
@@ -142,18 +152,18 @@
     <footer>
       <div id="rien">
       <p>Blandine</p>
-      <p>Ptitim</p>
+      <p>Tim</p>
       <p>Kévin</p>
-      <p>Chafik</p>
+      <p>Cheffik</p>
       <p>Idriss</p>
     </div>
 
     <div id="footergit">
-      <a href="#"title="test"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
-      <a href="#"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
-      <a href="#"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
-      <a href="#"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
-      <a href="#"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
+      <a href="https://github.com/Simplon-BlandineR" target="_blank"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
+      <a href="https://github.com/ptitim" target="_blank"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
+      <a href="https://github.com/SimplonKevinD" target="_blank"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
+      <a href="https://github.com/simplon-cheffikT" target="_blank"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
+      <a href="https://github.com/Simplon-IdrissM" target="_blank"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
     </div>
   </footer>
 

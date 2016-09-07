@@ -12,7 +12,7 @@ var scrollY = function() {
 
 var onScroll = function() {
     if (scrollY() > 40) {
-        image.style.marginTop = "15vh";
+        image.style.marginTop = "110px";
         header.style.position = "fixed";
         header.style.height = "11vh";
         headerContent.style.height = "10vh";

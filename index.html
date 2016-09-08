@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
     <meta charset="utf-8">
 
     <title>Site Display: flex</title>
@@ -66,10 +67,10 @@
     <section id="wrapExemple">
           <div id="buttons">
               <input type="button" name="flexdir" value="flex-direction" onclick="flexDir('exempleDistrib','flexDir1')">
-                <p>  Flex-direction : <span id="flexDir1"></span></p>
+                <!-- <p>  Flex-direction : <span id="flexDir1"></span></p> -->
 
               <input type="button" name="wrap" value="wrap" onclick="wraper()">
-                <p>  Wrap : <span id="wrap"></span></p>
+                <!-- <p>  Wrap : <span id="wrap"></span></p> -->
           </div>
 
           <div class="exemple" id="exempleDistrib">
@@ -79,6 +80,13 @@
               <div class="case quatre">4</div>
               <div class="case cinq">5</div>
           </div>
+          <pre class="language-css"><code>#exempleDistrib{
+              height: auto;
+              overflow: hidden;
+              border: 0.5vw solid grey;
+              flex-direction: <span class="flexdir1">flex-start</span>
+              flex-wrap: <span class="wrap">no-wrap</span>
+          }</code></pre>
     </section>
 
     <section id="alignement">
@@ -171,6 +179,7 @@
   <script src="testgsap.js" charset="utf-8"></script>
   <script src="script.js"></script>
   <script src="exemple.js"></script>
+  <script src="prism.js"></script>
 </body>
 
 </html>

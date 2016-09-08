@@ -14,7 +14,7 @@ function flexDir(id, id2){
 
 function wraper(){
     var ele = document.getElementById('exempleDistrib');
-    var texte = document.getElementById('wrap');//element htmln affichent l'attribut actuel
+    var texte = document.getElementsByClassName('wrap');//element htmln affichent l'attribut actuel
     var wrapAtr = ['wrap', 'wrap-reverse', 'nowrap'];//attribut du style flew-wrap
     var actu = ele.style.flexWrap;//style actuel
 

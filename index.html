@@ -13,10 +13,6 @@
 
         <nav>
             <ul>
-                <!-- <a href="#distribution" class="test" onclick="autoScroll(this)">
-                    <li class="animated fadeIn"><span class="navtext">Distribution</span></li>
-                     href="#alignement"
-                </a> -->
                 <a class="test" onclick="autoScroll('distribution')">
                     <li class="animated fadeIn"><span class="navtext">Distribution</span></li>
                 </a>
@@ -99,10 +95,10 @@
                 <li>space-around: même procédé que "space-between" excepté qu'il laisse des espaces entre les extrémités.</li>
               </ul>
 
-              <input type="button" name="align" value="alignement" onclick="bonjour()">
-              <p>justify-content: <span id="align"></span></p>
+              <input type="button" name="align" value="justify-content" onclick="justify()">
+              <p>justify-content: <span id="justify"></span></p>
 
-              <div class="exemple" id="exempleAlign">
+              <div class="exemple" id="exempleJustify">
                 <div class="case un">1</div>
                 <div class="case deux">2</div>
                 <div class="case trois">3</div>
@@ -112,13 +108,25 @@
 
           <h3>Align-items (axe secondaire)</h3>
               <ul>
-                <li>flex-start: positionne les éléments au début</li>
-                <li>flex-end: positionne les éléments à la fin</li>
-                <li>center: positionne les éléments au centre</li>
-                <li>baseline: identique à flex-start</li>
-                <li>stretch: positionne et étire les éléments dans l'espace disponible</li>
+                <li>flex-start : positionne les éléments au début</li>
+                <li>flex-end : positionne les éléments à la fin</li>
+                <li>center : positionne les éléments au centre</li>
+                <li>baseline : identique à flex-start</li>
+                <li>stretch : positionne et étire les éléments dans l'espace disponible</li>
             </ul>
             <p>Align-self (traitement des cas particuliers)</p>
+
+            <!--Exemple align-items-->
+            <input type="button" name="align" value="alignement" onclick="alignement()">
+            <p>justify-content: <span id="align"></span></p>
+
+            <div class="exemple" id="exempleAlign">
+              <div class="case un">1</div>
+              <div class="case deux">2</div>
+              <div class="case trois">3</div>
+              <div class="case quatre">4</div>
+              <!-- <div class="case cinq">5</div> -->
+            </div>
     </section>
     <section id="reorganisation">
                     <!--   margin avec flexbox  -->

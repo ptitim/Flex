@@ -1,11 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans|Oswald';
 
 body {
-    background-color: 	#fffefe;
+    background-color: #fffefe;
     margin: 0px;
 }
 #img {
-  position: block;
+  display: block;
   margin: 0px;
   width: 100%;
   height: auto;
@@ -197,12 +197,17 @@ footer img {
     border: 0.5vw solid grey;
 }
 
-#exempleAlign{
+#exempleJustify{
     width: 50vw;
     border: 0.5vw solid grey;
-
 }
 
+#exempleAlign{
+    flex-direction: column;
+    width: 30vw;
+    height: 40vh;
+    border: 0.5vw solid grey;
+}
 .case{
     width: 5vmax;
     height: 5vmax;

@@ -28,28 +28,65 @@ function wraper(){
     texte.innerText = wrapAtr[index];//affichage (textuel) du nouveaux style
 }
 
-function bonjour(){
-  var ele = document.getElementById('exempleAlign');
-  var texte = document.getElementById('align');//element htmln affichent l'attribut actuel
+function justify(){
+  var ele = document.getElementById('exempleJustify');
+  var texte = document.getElementById('justify');//element htmln affichent l'attribut actuel
   var alignAttr = ['flex-start', 'flex-end', 'center', 'space-between'];//attribut du style flew-wrap
   var actu = ele.style.justifyContent;//style actuel
 
   if(actu == ""){
-      ele.style.justifyContent = "flex-start";
+      ele.style.justifyContent = alignAttr[0];
   }
-  console.log(actu);
-  // TODO: corriger le bug renvoie index == -1
+
   var index = alignAttr.indexOf(actu);//index (pour le tableau d'attribut)
-  console.log(index);
   index++;
-  console.log(index);
   index >= alignAttr.length ? index = 0 : index = index;//remise a 0 de 'l'index si il dépasse du tableau
   ele.style.justifyContent = alignAttr[index];//application du nouveaux style
   texte.innerText = alignAttr[index];//affichage (textuel) du nouveaux style
+  return alignAttr[index];
 }
 
+
+function alignement(){
+    var ele = document.getElementById('exempleAlign');
+    var texte = document.getElementById('align');
+    var alignAttr = ["flex-start","flex-end","center","baseline","stretch"];
+    var actu = ele.style.alignItems;
+
+    if(actu == ""){
+        ele.style.alignItems = alignAttr[0];
+    }
+    var index = alignAttr.indexOf(actu);
+    console.log(index);
+    index++;
+    index >= alignAttr.length ? index = 0 : indedx = index;
+    ele.style.alignItems = alignAttr[index];
+    texte.innerText = alignAttr[index];
+    return alignAttr[index];
+}
+
+// function general(element, texte, attribut){
+//   var flexDirTab = ["row", "row-reverse", "column", "column-reverse"];//attribut du style flex
+//   var wrapAtr = ['wrap', 'wrap-reverse', 'nowrap'];//attribut du style flew-wrap
+//   var justifyAttr = ['flex-start', 'flex-end', 'center', 'space-between'];//attribut du style flew-wrap
+//   var alignAttr = ["flex-start ","flex-end","center","baseline","stretch"];
+//
+//   switch (attribut) {
+//     case 'flex-direction':
+//         var tab = flexDirTab;
+//         var actu = element.style.flexDirection;
+//         var changeAttribut = element.style;
+//       break;
+//     case '':
+//         var tab
+//     default:
+//
+//     var index = tab.indexOf(actu);
+//     index >= tab.length ? index = 0 : index = index;
+//   }
+//}
 function init(){
   flexDir('exempleDistrib','flexDir1');
   wraper();
-  bonjour();
+  justify();
 }

@@ -15,7 +15,7 @@ var onScroll = function() {
         image.style.marginTop = "110px";
         header.style.position = "fixed";
         header.style.height = "70px";
-        headerContent.style.height = "10vh";
+        headerContent.style.height = "70px";
 
     } else {
       image.style.marginTop = "0";
@@ -26,5 +26,3 @@ var onScroll = function() {
 };
 window.addEventListener('scroll', onScroll);
 onScroll();
-
-//bonjour ces pour idris le ...

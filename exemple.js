@@ -1,7 +1,7 @@
 // Chaque fonction sera pour un exemple, exepter le FlexDir qui s'apliquera sur l'id envoyer en parametre
 function flexDir(id, id2){
     var ele = document.getElementById(id);//recuperation de l'element a changez d'attribut css
-    var afgAttribut = document.getElementById(id2);//element html pour afficher l'etat de l'attribut css
+    var afgAttribut = document.getElementsByClassName(id2);//element html pour afficher l'etat de l'attribut css
     var flexDirTab = ["row", "row-reverse", "column", "column-reverse"];//attribut du style flex
     var styleAct = ele.style.flexDirection;//recuperation du style actuel
 
@@ -15,6 +15,7 @@ function flexDir(id, id2){
 function wraper(){
     var ele = document.getElementById('exempleDistrib');
     var texte = document.getElementsByClassName('wrap');//element htmln affichent l'attribut actuel
+    console.log(texte);
     var wrapAtr = ['wrap', 'wrap-reverse', 'nowrap'];//attribut du style flew-wrap
     var actu = ele.style.flexWrap;//style actuel
 

@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="coloration_syntaxique.css">
     <meta charset="utf-8">
 
     <title>Site Display: flex</title>
@@ -80,13 +80,15 @@
               <div class="case quatre">4</div>
               <div class="case cinq">5</div>
           </div>
-          <pre class="language-css"><code>#exempleDistrib{
-              height: auto;
-              overflow: hidden;
-              border: 0.5vw solid grey;
-              flex-direction: flex-start
-              flex-wrap: no-wrap
-          }</code></pre>
+          <!--Code css de l'exemple ci-dessus  -->
+          <pre class="box">
+          <span class="id">#exempleDistrib</span>{
+            <span class="style">height</span> : auto;
+            <span class="style">overflow</span> : hidden;
+            <span class="style">border</span> : 0.5vw solid grey;
+            <span class="style">flex-direction</span> : <span id="flexDir1"> flex-start</span>
+            <span class="style">flex-wrap</span> : <span id="wrap">no-wrap</span>
+          }</pre>
     </section>
 
     <section id="alignement">
@@ -104,7 +106,7 @@
               </ul>
 
               <input type="button" name="align" value="justify-content" onclick="justify()">
-              <p>justify-content: <span id="justify"></span></p>
+              <!-- <p>justify-content: <span id="justify"></span></p> -->
 
               <div class="exemple" id="exempleJustify">
                 <div class="case un">1</div>
@@ -113,6 +115,15 @@
                 <div class="case quatre">4</div>
                 <div class="case cinq">5</div>
               </div>
+              <!--Code css de l'exemple ci-dessus  -->
+              <pre class="box">
+                <span class="id">#exempleJustify</span>{
+                    <span class="style">width:</span>  50vw;
+                    <span class="style">border:</span>  0.5vw solid grey;
+                    <span class="style">justify-content:</span>  <span id="justify">flex-start;</span>
+                }
+              </pre>
+
 
           <h3>Align-items (axe secondaire)</h3>
               <ul>
@@ -126,7 +137,7 @@
 
             <!--Exemple align-items-->
             <input type="button" name="align" value="alignement" onclick="alignement()">
-            <p>justify-content: <span id="align"></span></p>
+            <!-- <p>align-items: <span id="align"></span></p> -->
 
             <div class="exemple" id="exempleAlign">
               <div class="case un">1</div>
@@ -135,6 +146,16 @@
               <div class="case quatre">4</div>
               <!-- <div class="case cinq">5</div> -->
             </div>
+            <!--Code css de l'exemple ci-dessus  -->
+            <pre class="box">
+              <span class="id">#exempleAlign</span>{
+                  <span class="style">border:</span> 0.5vw solid grey;
+                  <span class="style">width:</span> 30vw;
+                  <span class="style">height:</span> 40vh;
+                  <span class="style">flex-direction:</span> column;
+                  <span class="style">align-items: </span><span id="align">flex-start;</span>
+              }
+            </pre>
     </section>
     <section id="reorganisation">
                     <!--   margin avec flexbox  -->
@@ -179,7 +200,6 @@
   <script src="testgsap.js" charset="utf-8"></script>
   <script src="script.js"></script>
   <script src="exemple.js"></script>
-  <script src="prism.js"></script>
 </body>
 
 </html>

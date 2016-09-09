@@ -32,7 +32,7 @@ function wraper(){
 function justify(){
   var ele = document.getElementById('exempleJustify');
   var texte = document.getElementById('justify');//element htmln affichent l'attribut actuel
-  var alignAttr = ['flex-start', 'flex-end', 'center', 'space-between'];//attribut du style flew-wrap
+  var alignAttr = ['flex-start', 'flex-end', 'center', 'space-between', 'space-around'];//attribut du style flew-wrap
   var actu = ele.style.justifyContent;//style actuel
 
   if(actu == ""){

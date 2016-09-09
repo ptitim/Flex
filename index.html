@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="coloration_syntaxique.css">
     <meta charset="utf-8">
 
     <title>Site Display: flex</title>
@@ -72,10 +73,10 @@
     <section id="wrapExemple">
           <div id="buttons">
               <input type="button" name="flexdir" value="flex-direction" onclick="flexDir('exempleDistrib','flexDir1')">
-                <p>  Flex-direction : <span id="flexDir1"></span></p>
+                <!-- <p>  Flex-direction : <span id="flexDir1"></span></p> -->
 
               <input type="button" name="wrap" value="wrap" onclick="wraper()">
-                <p>  Wrap : <span id="wrap"></span></p>
+                <!-- <p>  Wrap : <span id="wrap"></span></p> -->
           </div>
 
           <div class="exemple" id="exempleDistrib">
@@ -85,6 +86,15 @@
               <div class="case quatre">4</div>
               <div class="case cinq">5</div>
           </div>
+          <!--Code css de l'exemple ci-dessus  -->
+          <pre class="box">
+            <span class="id">#exempleDistribution</span>{
+                <span class="attribut">height : </span>auto;
+                <span class="attribut">overflow : </span>hidden;
+                <span class="attribut">border : </span>0.5vw solid grey;
+                <span class="attribut">flex-direction : </span><span id="flexDir1"></span>
+                <span class="attribut">flex-wrap </span><span id="wrap"></span>
+            }</pre>
 
           <p>Il existe aussi une propriété raccourcie : <strong>flex-flow</strong>, qui a la particularité de regrouper flex-direction et flex-wrap.<br>
           Exemple : <code>flex-flow: row-reverse wrap;</code><br>
@@ -105,16 +115,23 @@
                 <li>space-around: même procédé que "space-between" excepté qu'il laisse le même espacement entre chaque éléments.</li>
               </ul>
 
-              <input type="button" name="align" value="alignement" onclick="bonjour()">
-              <p>justify-content: <span id="align"></span></p>
+              <input type="button" name="align" value="justify-content" onclick="justify()">
+              <!-- <p>justify-content: <span id="align"></span></p> -->
 
-              <div class="exemple" id="exempleAlign">
+              <div class="exemple" id="exempleJustify">
                 <div class="case un">1</div>
                 <div class="case deux">2</div>
                 <div class="case trois">3</div>
                 <div class="case quatre">4</div>
                 <div class="case cinq">5</div>
               </div>
+              <pre class="box">
+                <span class="id">#exempleJustify </span>{
+                    <span class="attribut">width </span>: 50vw;
+                    <span class="attribut">border </span>: 0.5vw solid grey;
+                    <span class="attribut">justify-content </span>: <span  id="justify"></span>
+                }
+              </pre>
 
           <h3>Align-items (axe secondaire)</h3>
           <p>La propriété align-items permet de définir la façon dont les éléments sont disposés sur l'axe transversal.</p>
@@ -125,6 +142,25 @@
                 <li>baseline : les éléments sont répartis de manière à ce que la ligne de base s'aligne;</li>
                 <li>stretch : étire les éléments dans l'espace disponible (le conteneur).</li>
             </ul>
+            <input type="button" name="align" value="alignement" onclick="alignement()">
+            <div class="exemple" id="exempleAlign">
+              <div class="case un">1</div>
+              <div class="case deux">2</div>
+              <div class="case trois">3</div>
+              <div class="case quatre">4</div>
+              <div class="case cinq">5</div>
+            </div>
+            <!--Code de l'exemple ci-dessus  -->
+            <pre class="box">
+            <span class="id">#exempleAlign  </span>{
+                <span class="attribut">width  </span>: 30vw;
+                <span class="attribut">height  </span>: 40vh;
+                <span class="attribut">border  </span>: 0.5vw solid grey;
+                <span class="attribut">flex-direction  </span>: column;
+                <span class="attribut">align-items  </span>: <span id="align"></span>
+            }
+            </pre>
+
             <p><strong>Point sur la propriété Align-self : </strong>elle permet de supplanter la valeur d'align-items pour un ou plusieurs éléments spécifiques. Align-self utilise les mêmes valeurs qu'align-items.</p>
     </section>
     <section id="reorganisation">

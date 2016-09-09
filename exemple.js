@@ -1,20 +1,20 @@
 // Chaque fonction sera pour un exemple, exepter le FlexDir qui s'apliquera sur l'id envoyer en parametre
 function flexDir(id, id2){
     var ele = document.getElementById(id);//recuperation de l'element a changez d'attribut css
-    var afgAttribut = document.getElementsByClassName(id2);//element html pour afficher l'etat de l'attribut css
-    var flexDirTab = ["row", "row-reverse", "column", "column-reverse"];//attribut du style flex
+    var afgAttribut = document.getElementById(id2);//element html pour afficher l'etat de l'attribut css
+    var flexDirTab = ["row", "row-reverse"/*, "column", "column-reverse"*/];//attribut du style flex
     var styleAct = ele.style.flexDirection;//recuperation du style actuel
 
     var index = flexDirTab.indexOf(styleAct);
     index++;
     index >= flexDirTab.length ? index = 0 : index = index;//condition pour ne pas depacer du tableau
     ele.style.flexDirection = flexDirTab[index];
-    afgAttribut.innerText  = flexDirTab[index];
+    afgAttribut.innerText  = flexDirTab[index]+";";
 }
 
 function wraper(){
     var ele = document.getElementById('exempleDistrib');
-    var texte = document.getElementsByClassName('wrap');//element htmln affichent l'attribut actuel
+    var texte = document.getElementById('wrap');//element htmln affichent l'attribut actuel
     console.log(texte);
     var wrapAtr = ['wrap', 'wrap-reverse', 'nowrap'];//attribut du style flew-wrap
     var actu = ele.style.flexWrap;//style actuel
@@ -26,7 +26,7 @@ function wraper(){
     index++;
     index >= wrapAtr.length ? index = 0 : index = index;//remise a 0 de 'l'index si il dépasse du tableau
     ele.style.flexWrap = wrapAtr[index];//application du nouveaux style
-    texte.innerText = wrapAtr[index];//affichage (textuel) du nouveaux style
+    texte.innerText = wrapAtr[index] + ";";//affichage (textuel) du nouveaux style
 }
 
 function justify(){
@@ -43,7 +43,7 @@ function justify(){
   index++;
   index >= alignAttr.length ? index = 0 : index = index;//remise a 0 de 'l'index si il dépasse du tableau
   ele.style.justifyContent = alignAttr[index];//application du nouveaux style
-  texte.innerText = alignAttr[index];//affichage (textuel) du nouveaux style
+  texte.innerText = alignAttr[index] + ";";//affichage (textuel) du nouveaux style
   return alignAttr[index];
 }
 
@@ -62,7 +62,7 @@ function alignement(){
     index++;
     index >= alignAttr.length ? index = 0 : indedx = index;
     ele.style.alignItems = alignAttr[index];
-    texte.innerText = alignAttr[index];
+    texte.innerText = alignAttr[index] + ";";
     return alignAttr[index];
 }
 
@@ -90,4 +90,5 @@ function init(){
   flexDir('exempleDistrib','flexDir1');
   wraper();
   justify();
+  alignement();
 }

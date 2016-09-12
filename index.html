@@ -71,7 +71,7 @@
     </section>
 
     <section id="wrapExemple">
-          <div id="buttons">
+          <div class="buttons">
               <input type="button" name="flexdir" value="flex-direction" onclick="flexDir('exempleDistrib','flexDir1')">
                 <!-- <p>  Flex-direction : <span id="flexDir1"></span></p> -->
 
@@ -115,7 +115,9 @@
                 <li>space-around: même procédé que "space-between" excepté qu'il laisse le même espacement entre chaque éléments.</li>
               </ul>
 
-              <input type="button" name="align" value="justify-content" onclick="justify()">
+              <div class="buttons">
+                <input type="button" name="align" value="justify-content" onclick="justify()">
+              </div>
               <!-- <p>justify-content: <span id="align"></span></p> -->
 
               <div class="exemple" id="exempleJustify">
@@ -142,7 +144,9 @@
                 <li>baseline : les éléments sont répartis de manière à ce que la ligne de base s'aligne;</li>
                 <li>stretch : étire les éléments dans l'espace disponible (le conteneur).</li>
             </ul>
-            <input type="button" name="align" value="alignement" onclick="alignement()">
+            <div class="buttons">
+              <input type="button" name="align" value="alignement" onclick="alignement()">
+            </div>
             <div class="exemple" id="exempleAlign">
               <div class="case un">1</div>
               <div class="case deux">2</div>
@@ -177,30 +181,19 @@
           <h2>Flexibilité</h2>
                     <p>La flexibilité est le fondement même du display Flex et cela se fait grâce à la propriété flex.</p>
                     <p>La propriété flex est un raccourci de trois propriétés : </p>
+                    <ul>
                         <li>flex-grow : capacité pour un élément de s'étirer dans l'espace restant;</li>
                         <li>flex-shrink : capacité pour un élément de se contracter si nécessaire;</li>
                         <li>flex-basis : taille initiale des éléments avant que l'espace ne soit distribué.</li>
-
+                    </ul>
     </section>
 
-        </p>
-    </div>
     <footer>
-      <div id="rien">
-      <p>Blandine</p>
-      <p>Tim</p>
-      <p>Kévin</p>
-      <p>Cheffik</p>
-      <p>Idriss</p>
-    </div>
-
-    <div id="footergit">
-      <a href="https://github.com/Simplon-BlandineR" target="_blank"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
-      <a href="https://github.com/ptitim" target="_blank"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
-      <a href="https://github.com/SimplonKevinD" target="_blank"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
-      <a href="https://github.com/simplon-cheffikT" target="_blank"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
-      <a href="https://github.com/Simplon-IdrissM" target="_blank"><img src="data/gitb.png" alt="Image" onmouseover="javascript:this.src='data/gitn.png';" onmouseout="javascript:this.src='data/gitb.png';" /></a></p>
-    </div>
+      <div id="blan"><a href="https://github.com/Simplon-BlandineR" target="_blank"><p>Blandine</p><img src="data/gitb.png" alt="Image"/></a></div>
+      <div id="tim"><a href="https://github.com/ptitim" target="_blank"><p>Tim</p><img src="data/gitb.png" alt="Image"/></a></div>
+      <div id="keke"><a href="https://github.com/SimplonKevinD" target="_blank"><p>Kévin</p><img src="data/gitb.png" alt="Image"/></a></div>
+      <div id="cheffik"><a href="https://github.com/simplon-cheffikT" target="_blank"><p>Cheffik</p><img src="data/gitb.png" alt="Image"/></a></div>
+      <div id="babouche"><a href="https://github.com/Simplon-IdrissM" target="_blank"><p>Idriss</p><img src="data/gitb.png" alt="Image"/></a></div>
   </footer>
 
   <!--importation des script  -->

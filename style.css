@@ -174,7 +174,6 @@ footer a {
     overflow: hidden;
 }
 
-<<<<<<< HEAD
 #exempleJustify{
     width: 50vw;
     justify-content: flex-start;
@@ -185,12 +184,11 @@ footer a {
     height: 40vh;
     flex-direction: column;
     align-items: flex-start;
-=======
+}
+
 #exempleJustify {
   width: 50vw;
   justify-content: flex-start;
-}
->>>>>>> 2cfe958e7e7e2800f94b4ac6d4d819fc4ff92f93
 }
 
 .case{

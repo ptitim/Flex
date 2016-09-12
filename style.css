@@ -103,7 +103,7 @@ h3 {
   text-align: justify;
  }
 
-@media screen and (max-resolution: 2dpi){
+@media screen and (max-device-width: 600px) {
     section{
       margin-left: 0;
       margin-right: 0;

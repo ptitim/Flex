@@ -93,8 +93,8 @@ h3 {
   margin-bottom: 10px;
 }
  section {
-  /*margin-left: 20%;
-  margin-right: 20%;*/
+  margin-left: 20%;
+  margin-right: 20%;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   margin-top: 15px;
@@ -103,19 +103,19 @@ h3 {
   text-align: justify;
  }
 
-@media screen and (max-resolution: 400dpi){
+@media screen and (min-resolution: 400dpi){
     section{
       margin-left: 0;
       margin-right: 0;
       font-size: 35px;
     }
 }
-@media screen and (min-device-width: 651px) {
+/*@media screen and (min-device-width: 651px) {
     section{
       margin-left: 20%;
       margin-right: 20%;
     }
-}
+}*/
 navbar {
     width: 8%;
     height: 40%;

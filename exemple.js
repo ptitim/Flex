@@ -75,11 +75,11 @@ function ordre(){
     console.log(textes);
 
     if(actu == 1){
-         elements[0].order = "3"; textes[0].innerText = "3";
-         elements[1].order = "5"; textes[1].innerText = "5";
-         elements[2].order = "4"; textes[2].innerText = "4";
-         elements[3].order = "2"; textes[3].innerText = "2";
-         elements[4].order = "1"; textes[4].innerText = "1";
+         elements[0].style.order = "3"; textes[0].innerText = "3";
+         elements[1].style.order = "5"; textes[1].innerText = "5";
+         elements[2].style.order = "4"; textes[2].innerText = "4";
+         elements[3].style.order = "2"; textes[3].innerText = "2";
+         elements[4].style.order = "1"; textes[4].innerText = "1";
          console.log("bonjour");
     }else{
         for (var i = 0; i < elements.length; i++) {

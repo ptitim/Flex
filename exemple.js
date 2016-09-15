@@ -10,12 +10,11 @@ function flexDir(id, id2){
     index >= flexDirTab.length ? index = 0 : index = index;//condition pour ne pas depacer du tableau
     ele.style.flexDirection = flexDirTab[index];
     afgAttribut.innerText  = flexDirTab[index]+";";
-}
+};
 
 function wraper(){
     var ele = document.getElementById('exempleDistrib');
     var texte = document.getElementById('wrap');//element htmln affichent l'attribut actuel
-    console.log(texte);
     var wrapAtr = ['wrap', 'wrap-reverse', 'nowrap'];//attribut du style flew-wrap
     var actu = ele.style.flexWrap;//style actuel
 
@@ -27,7 +26,7 @@ function wraper(){
     index >= wrapAtr.length ? index = 0 : index = index;//remise a 0 de 'l'index si il dépasse du tableau
     ele.style.flexWrap = wrapAtr[index];//application du nouveaux style
     texte.innerText = wrapAtr[index] + ";";//affichage (textuel) du nouveaux style
-}
+};
 
 function justify(){
   var ele = document.getElementById('exempleJustify');
@@ -45,7 +44,7 @@ function justify(){
   ele.style.justifyContent = alignAttr[index];//application du nouveaux style
   texte.innerText = alignAttr[index] + ";";//affichage (textuel) du nouveaux style
   return alignAttr[index];
-}
+};
 
 
 function alignement(){
@@ -58,34 +57,43 @@ function alignement(){
         ele.style.alignItems = alignAttr[0];
     }
     var index = alignAttr.indexOf(actu);
-    console.log(index);
     index++;
     index >= alignAttr.length ? index = 0 : indedx = index;
     ele.style.alignItems = alignAttr[index];
     texte.innerText = alignAttr[index] + ";";
     return alignAttr[index];
-}
+};
 
-// function general(element, texte, attribut){
-//   var flexDirTab = ["row", "row-reverse", "column", "column-reverse"];//attribut du style flex
-//   var wrapAtr = ['wrap', 'wrap-reverse', 'nowrap'];//attribut du style flew-wrap
-//   var justifyAttr = ['flex-start', 'flex-end', 'center', 'space-between'];//attribut du style flew-wrap
-//   var alignAttr = ["flex-start ","flex-end","center","baseline","stretch"];
-//
-//   switch (attribut) {
-//     case 'flex-direction':
-//         var tab = flexDirTab;
-//         var actu = element.style.flexDirection;
-//         var changeAttribut = element.style;
-//       break;
-//     case '':
-//         var tab
-//     default:
-//
-//     var index = tab.indexOf(actu);
-//     index >= tab.length ? index = 0 : index = index;
-//   }
-//}
+
+function ordre(){
+    var elements = [];
+    elements.push(gid('un'),gid('deux'),gid('trois'),gid('quatre'),gid('cinq'));
+    var textes = [];
+    textes.push(gid('order1'),gid('order2'),gid('order3'),gid('order4'),gid('order5'));
+    var actu = elements[0].order;
+    console.log(elements);
+    console.log(textes);
+
+    if(actu == 1){
+         elements[0].order = "3"; textes[0].innerText = "3";
+         elements[1].order = "5"; textes[1].innerText = "5";
+         elements[2].order = "4"; textes[2].innerText = "4";
+         elements[3].order = "2"; textes[3].innerText = "2";
+         elements[4].order = "1"; textes[4].innerText = "1";
+         console.log("bonjour");
+    }else{
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].order = (i+1).toString();
+          textes[i].innerText = i+1;
+        }
+        console.log("aurevoir");
+    }
+};
+
+function gid(id){
+    return document.getElementById(id);
+};
+
 function init(){
   flexDir('exempleDistrib','flexDir1');
   wraper();

@@ -84,13 +84,13 @@
           </div>
           <!--Code css de l'exemple ci-dessus  -->
           <pre class="box">
-            <span class="id">#exempleDistribution</span>{
-                <span class="attribut">height : </span>auto;
-                <span class="attribut">overflow : </span>hidden;
-                <span class="attribut">border : </span>0.5vw solid grey;
-                <span class="attribut">flex-direction : </span><span id="flexDir1"></span>
-                <span class="attribut">flex-wrap </span><span id="wrap"></span>
-            }</pre>
+    <span class="id">#exempleDistribution</span>{
+        <span class="attribut">height : </span>auto;
+        <span class="attribut">overflow : </span>hidden;
+        <span class="attribut">border : </span>0.5vw solid grey;
+        <span class="attribut">flex-direction : </span><span id="flexDir1"></span>
+        <span class="attribut">flex-wrap </span> <strong><span id="wrap"></span></strong>
+    }</pre>
 
           <p>Il existe aussi une propriété raccourcie : <strong>flex-flow</strong>, qui a la particularité de regrouper flex-direction et flex-wrap.<br>
           Exemple : <code>flex-flow: row-reverse wrap;</code><br>
@@ -124,11 +124,11 @@
                 <div class="case cinq">5</div>
               </div>
               <pre class="box">
-                <span class="id">#exempleJustify </span>{
-                    <span class="attribut">width </span>: 50vw;
-                    <span class="attribut">border </span>: 0.5vw solid grey;
-                    <span class="attribut">justify-content </span>: <span  id="justify"></span>
-                }
+    <span class="id">#exempleJustify </span>{
+        <span class="attribut">width </span>: 50vw;
+        <span class="attribut">border </span>: 0.5vw solid grey;
+        <span class="attribut">justify-content </span>: <strong><span  id="justify"></span></strong>
+    }
               </pre>
 
           <h3>Align-items (axe secondaire)</h3>
@@ -152,13 +152,13 @@
             </div>
             <!--Code de l'exemple ci-dessus  -->
             <pre class="box">
-            <span class="id">#exempleAlign  </span>{
-                <span class="attribut">width  </span>: 30vw;
-                <span class="attribut">height  </span>: 40vh;
-                <span class="attribut">border  </span>: 0.5vw solid grey;
-                <span class="attribut">flex-direction  </span>: column;
-                <span class="attribut">align-items  </span>: <span id="align"></span>
-            }
+    <span class="id">#exempleAlign  </span>{
+        <span class="attribut">width  </span>: 30vw;
+        <span class="attribut">height  </span>: 40vh;
+        <span class="attribut">border  </span>: 0.5vw solid grey;
+        <span class="attribut">flex-direction  </span>: column;
+        <span class="attribut">align-items  </span>: <strong><span id="align"></span></strong>
+    }
             </pre>
 
             <p><strong>Point sur la propriété Align-self : </strong>elle permet de supplanter la valeur d'align-items pour un ou plusieurs éléments spécifiques. Align-self utilise les mêmes valeurs qu'align-items.</p>
@@ -172,6 +172,24 @@
               La propriété order s'écrit comme suit : <code>order: (nombre entier)</code>
             </p>
             EXEMPLE
+            <div class="buttons">
+              <input type="button" name="ordre" value="ordre" onclick="ordre()">
+            </div>
+            <div class="exemple" id="exempleOrdre">
+              <div class="case un" id="un">1</div>
+              <div class="case deux" id="deux">2</div>
+              <div class="case trois" id="trois">3</div>
+              <div class="case quatre" id="quatre">4</div>
+              <div class="case cinq" id="cinq">5</div>
+            </div>
+            <!--Code de l'exemple ci-dessus  -->
+            <pre class="box">
+    <span class="id">#un</span>{<span class="attribut">order: </span><span id="order1">1</span>;}
+    <span class="id">#deux</span>{<span class="attribut">order: </span><span id="order2">2</span>;}
+    <span class="id">#trois</span>{<span class="attribut">order: </span><span id="order3">3</span>;}
+    <span class="id">#quatre</span>{<span class="attribut">order: </span><span id="order4">4</span>;}
+    <span class="id">#cinq</span>{<span class="attribut">order: </span><span id="order5">5</span>;}</pre>
+
 
                     <!-- Flexibilité -->
           <h2>Flexibilité</h2>
@@ -199,5 +217,4 @@
   <script src="script.js"></script>
   <script src="exemple.js"></script>
 </body>
-
 </html>

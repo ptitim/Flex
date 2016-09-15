@@ -213,3 +213,12 @@ footer a {
 .cinq{
     background-color: #ffffff;
 }
+#exempleOrdre{
+    display: flex;
+}
+
+#un{order: 1;}
+#deux{order: 2;}
+#trois{order: 3;}
+#quatre{order: 4;}
+#cinq{order: 5;}

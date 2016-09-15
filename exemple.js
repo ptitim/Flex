@@ -70,9 +70,7 @@ function ordre(){
     elements.push(gid('un'),gid('deux'),gid('trois'),gid('quatre'),gid('cinq'));
     var textes = [];
     textes.push(gid('order1'),gid('order2'),gid('order3'),gid('order4'),gid('order5'));
-    var actu = elements[0].order;
-    console.log(elements);
-    console.log(textes);
+    var actu = elements[0].style.order;
 
     if(actu == 1){
          elements[0].style.order = "3"; textes[0].innerText = "3";
@@ -83,7 +81,7 @@ function ordre(){
          console.log("bonjour");
     }else{
         for (var i = 0; i < elements.length; i++) {
-          elements[i].order = (i+1).toString();
+          elements[i].style.order = (i+1).toString();
           textes[i].innerText = i+1;
         }
         console.log("aurevoir");
@@ -99,4 +97,5 @@ function init(){
   wraper();
   justify();
   alignement();
+  ordre();
 }

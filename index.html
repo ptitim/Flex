@@ -35,7 +35,8 @@
 
   <section id="presentation">
         <h1>Le display Flex en CSS</h1>
-        <p>Le Display Flex est un outil qui permet de créer des "modèles de boîte" flexibles. On distingue 4 propriétés possibles :</p>
+        <p>Le 'Flex' facilite le placement des objets, qui se fait de manière plus intuitive et plus facile. C'est la plus récente des propriétés CSS du module display.</p>
+        <p>On lui distingue 4 propriétés possibles :</p>
         <ul>
             <li>La distribution,</li>
             <li>Les alignements,</li>
@@ -72,6 +73,7 @@
                 <!-- <p>  Flex-direction : <span id="flexDir1"></span></p> -->
 
               <input type="button" name="wrap" value="wrap" onclick="wraper()">
+              <span>Cliquez sur les boutons pour voir la magie de <strong>flex-direction</strong> et de <strong>wrap</strong></span>
                 <!-- <p>  Wrap : <span id="wrap"></span></p> -->
           </div>
 
@@ -113,6 +115,7 @@
 
               <div class="buttons">
                 <input type="button" name="align" value="justify-content" onclick="justify()">
+                <span>Cliquez sur le bouton pour voir la magie de <strong>justify-content</strong></span>
               </div>
               <!-- <p>justify-content: <span id="align"></span></p> -->
 
@@ -142,7 +145,9 @@
             </ul>
             <div class="buttons">
               <input type="button" name="align" value="alignement" onclick="alignement()">
+              <span>Cliquez sur le bouton pour voir la magie de <strong>align-items</strong></span>
             </div>
+
             <div class="exemple" id="exempleAlign">
               <div class="case un">1</div>
               <div class="case deux">2</div>
@@ -171,10 +176,11 @@
             <p>Celle-ci s'applique aux flex-items avec des valeurs numériques.<br>
               La propriété order s'écrit comme suit : <code>order: (nombre entier)</code>
             </p>
-            EXEMPLE
             <div class="buttons">
-              <input type="button" name="ordre" value="ordre" onclick="ordre()">
+              <input type="button" name="ordre" value="order" onclick="ordre()">
+              <span>Cliquez sur les boutons pour voir la magie de <strong>order</strong></span>
             </div>
+
             <div class="exemple" id="exempleOrdre">
               <div class="case un" id="un">1</div>
               <div class="case deux" id="deux">2</div>

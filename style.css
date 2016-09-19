@@ -102,7 +102,10 @@ h3 {
   line-height: 1.5;
   text-align: justify;
  }
-
+section span {
+  font-style: italic;
+  font-size: 15px;
+}
 navbar {
     width: 8%;
     height: 40%;
@@ -132,6 +135,10 @@ footer a {
   color: #000;
   text-decoration: none;
 }
+footer p {
+  padding-left: 7%;
+}
+
 #blan, #tim, #keke, #cheffik, #babouche {
   opacity: 0.5;
 }
@@ -144,19 +151,20 @@ footer a {
 .buttons input {
   width: auto;
   height: 3vw;
+  background-color: #a7f6fb;
   font-family: 'Open Sans', sans-serif;
   color: black;
   font-size: 15px;
-  border-radius: 2px;
-  background-color: #FFF;
-  border-style: groove;
+  border-radius: 10px;
+  border-style: outset;
+  margin-bottom: 0.5%;
 }
 .buttons input:hover {
   cursor: pointer;
   background-color: black;
 	color: #FFF;
-  border-radius: 2px;
   transition: 0.2s;
+  border-style: inset;
 }
 
 #flexDir1, #wrap {

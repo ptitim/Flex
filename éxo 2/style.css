@@ -1,0 +1,44 @@
+img {
+    height: 25vmax;
+    width: 25max;
+}
+
+.BLOC1{
+display: flex;
+}
+
+.BLOC2{
+display: flex;
+}
+
+#IMG1{
+    order:4;
+}
+
+#IMG2{
+    order: 7;
+}
+
+#IMG3{
+    order: 6;
+}
+
+#IMG4{
+    order:3 ;
+}
+
+#IMG5{
+    order: 1;
+}
+
+#IMG6{
+    order: 5;
+}
+
+#IMG7{
+    order: 2;
+}
+
+#IMG8{
+    order: 8;
+}

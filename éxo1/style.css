@@ -1,0 +1,22 @@
+.ImageRed {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ImagePurple {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ImageBlue {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.ImageYellow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -6,72 +6,64 @@ body {
 }
 #img {
   position: block;
-  margin: 0px;
   width: 100%;
   height: auto;
 }
 
+/* ----- NAVBAR ----- */
 header {
-	display: flex;
-	/*align-items: space-around;*/
-	justify-content: center;
 	top: 0;
-	height: 20%;
 	width: 100%;
 	z-index: 9999;
   background-color: #a7f6fb;
 }
-header #header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	height: 110px;
-}
 
-header #header nav {
-	margin-right: 100px;
-	height: 50px;
-}
-
-header #header nav ul {
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 	list-style: none;
-	display: flex;
-	flex-direction: row;
 	margin: 0;
 }
 
-header #header nav ul a {
-	text-decoration: none;
-	color: black;
-	padding-left: 20px;
-	padding-right: 20px;
+header nav ul a #title {
+  color: #FFF;
+  background-color: #1c4454;
+  color: #FFF;
+  font-family: 'Lobster Two', cursive;
+  font-size: 3em;
+  padding: 20px;
 	cursor: pointer;
-	height: 50px;
-	line-height: 50px;
-  background-color: #FFF;
-  border-radius: 10px;
-  margin-right: 2vw;
+  border-radius: 0 0 10px 10px;
 }
-
-header #header nav ul a:hover {
-	background-color: #1c4454;
-	color: #FFF;
-  border-radius: 10px;
+header nav ul a #title:hover {
+  color: #1c4454;
+  background-color: #FFF;
   transition: 1s;
 }
-
-header #header nav ul a:hover .navtext {
-	color: #FFF;
-  font-family: 'Lobster Two', cursive;
-  font-size: 2em;
+header nav ul a {
+  text-decoration: none;
 }
-
-header #header nav ul a .navtext {
+header nav ul a .navtext {
+  display: flex;
+  justify-content: center;
 	color: #1c4454;
   font-family: 'Lobster Two', cursive;
-  font-size: 2em;
+  font-size: 1.5em;
+  text-decoration: none;
+	padding: 15px;
+	cursor: pointer;
+  background-color: #FFF;
+  border-radius: 0 0 5px 5px;
+}
+header nav ul a:hover .navtext {
+  	color: #FFF;
+    background-color: #1c4454;
+  	color: #FFF;
+    transition: 1s;
 }
 
+/* ---- CONTENU -----*/
 h1 {
   display: flex;
   justify-content: center;
@@ -114,7 +106,6 @@ navbar {
 }
 
 /* --- FOOTER --- */
-
 footer {
     margin-top: 0px;
     width: 100%;
@@ -146,8 +137,8 @@ footer p {
 #blan:hover, #tim:hover, #keke:hover, #cheffik:hover, #babouche:hover {
   opacity: 1;
 }
-/* ---- Css destinée aux exemples ----*/
 
+/* ---- EXEMPLES ----*/
 .buttons input {
   width: auto;
   height: 3vw;

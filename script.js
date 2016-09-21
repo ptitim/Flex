@@ -14,14 +14,14 @@ var onScroll = function() {
     if (scrollY() > 40) {
         image.style.marginTop = "110px";
         header.style.position = "fixed";
-        header.style.height = "70px";
-        headerContent.style.height = "70px";
+        header.style.height = "80px";
+        headerContent.style.height = "80px";
 
     } else {
-      image.style.marginTop = "0";
+        image.style.marginTop = "0";
         header.style.position = "relative";
-        header.style.height = "110px";
-        headerContent.style.height = "110px";
+        header.style.height = "100px";
+        headerContent.style.height = "100px";
     }
 };
 window.addEventListener('scroll', onScroll);

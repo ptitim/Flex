@@ -9,7 +9,7 @@
     <title>Site Display: flex</title>
 </head>
 <body class="thing" onload="init()">
-  <header>
+  <header id="haut">
     <div id="header" class="container">
 
         <nav>
@@ -26,6 +26,9 @@
                 </a>
                 <a class="test" onclick="autoScroll('flexibiliter')">
                     <li class="animated fadeIn"><span class="navtext">Flexibilité</span></li>
+                </a>
+                <a class="test" onclick="autoScroll('haut')">
+                    <li class="animated fadeIn"><span class="navtext">Display Flex</span></li>
                 </a>
             </ul>
         </nav>
@@ -86,13 +89,13 @@
           </div>
           <!--Code css de l'exemple ci-dessus  -->
           <pre class="box">
-    <span class="id">#exempleDistribution</span>{
-        <span class="attribut">height : </span>auto;
-        <span class="attribut">overflow : </span>hidden;
-        <span class="attribut">border : </span>0.5vw solid grey;
-        <span class="attribut">flex-direction : </span><span id="flexDir1"></span>
-        <span class="attribut">flex-wrap </span> <strong><span id="wrap"></span></strong>
-    }</pre>
+    <span class="id">#exempleDistribution</span><span class="prop">{</span>
+        <span class="attribut">height : </span><span class="prop">auto;</span>
+        <span class="attribut">overflow : </span><span class="prop">hidden;</span>
+        <span class="attribut">border : </span><span class='prop'>0.5vw solid grey</span>;
+        <span class="attribut">flex-direction : </span><span id="flexDir1" class="prop"></span>
+        <span class="attribut">flex-wrap </span> <strong><span id="wrap" class="prop"></span></strong>
+    <span class="prop">}</span></pre>
 
           <p>Il existe aussi une propriété raccourcie : <strong>flex-flow</strong>, qui a la particularité de regrouper flex-direction et flex-wrap.<br>
           Exemple : <code>flex-flow: row-reverse wrap;</code><br>
@@ -127,11 +130,11 @@
                 <div class="case cinq">5</div>
               </div>
               <pre class="box">
-    <span class="id">#exempleJustify </span>{
-        <span class="attribut">width </span>: 50vw;
-        <span class="attribut">border </span>: 0.5vw solid grey;
-        <span class="attribut">justify-content </span>: <strong><span  id="justify"></span></strong>
-    }
+    <span class="id">#exempleJustify </span><span class="prop">{</span>
+        <span class="attribut">width </span><span class="prop">: 50vw;</span>
+        <span class="attribut">border </span><span class="prop">: 0.5vw solid grey;</span>
+        <span class="attribut">justify-content </span>: <strong><span  id="justify" class="prop"></span></strong>
+    <span class="prop">}</span>
               </pre>
 
           <h3>Align-items (axe secondaire)</h3>
@@ -157,13 +160,13 @@
             </div>
             <!--Code de l'exemple ci-dessus  -->
             <pre class="box">
-    <span class="id">#exempleAlign  </span>{
-        <span class="attribut">width  </span>: 30vw;
-        <span class="attribut">height  </span>: 40vh;
-        <span class="attribut">border  </span>: 0.5vw solid grey;
-        <span class="attribut">flex-direction  </span>: column;
-        <span class="attribut">align-items  </span>: <strong><span id="align"></span></strong>
-    }
+    <span class="id">#exempleAlign  </span><span class="prop">{</span>
+        <span class="attribut">width  </span><span class="prop">: 30vw;</span>
+        <span class="attribut">height  </span><span class="prop">: 40vh;</span>
+        <span class="attribut">border  </span><span class="prop">: 0.5vw solid grey;</span>
+        <span class="attribut">flex-direction  </span><span class="prop">: column;</span>
+        <span class="attribut">align-items  </span>: <strong><span id="align" class="prop"></span></strong>
+    <span class="prop">}</span>
             </pre>
 
             <p><strong>Point sur la propriété Align-self : </strong>elle permet de supplanter la valeur d'align-items pour un ou plusieurs éléments spécifiques. Align-self utilise les mêmes valeurs qu'align-items.</p>
@@ -190,11 +193,11 @@
             </div>
             <!--Code de l'exemple ci-dessus  -->
             <pre class="box">
-    <span class="id">#un</span>{<span class="attribut">order: </span><span id="order1">1</span>;}
-    <span class="id">#deux</span>{<span class="attribut">order: </span><span id="order2">2</span>;}
-    <span class="id">#trois</span>{<span class="attribut">order: </span><span id="order3">3</span>;}
-    <span class="id">#quatre</span>{<span class="attribut">order: </span><span id="order4">4</span>;}
-    <span class="id">#cinq</span>{<span class="attribut">order: </span><span id="order5">5</span>;}</pre>
+    <span class="id">#un</span><span class="prop">{</span><span class="attribut">order: </span><span id="order1" class="prop">1</span><span class="prop">;}</span>
+    <span class="id">#deux</span><span class="prop">{</span><span class="attribut">order: </span><span id="order2" class="prop">2</span><span class="prop">;}</span>
+    <span class="id">#trois</span><span class="prop">{</span><span class="attribut">order: </span><span id="order3" class="prop">3</span><span class="prop">;}</span>
+    <span class="id">#quatre</span><span class="prop">{</span><span class="attribut">order: </span><span id="order4" class="prop">4</span><span class="prop">;}</span>
+    <span class="id">#cinq</span><span class="prop">{</span><span class="attribut">order: </span><span id="order5" class="prop">5</span><span class="prop">;}</span></pre>
 
 
                     <!-- Flexibilité -->

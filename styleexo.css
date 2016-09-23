@@ -1,0 +1,147 @@
+@import 'https://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans|Oswald';
+body {
+    background-color: #fffefe;
+    margin: 0px;
+}
+#img {
+    position: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ----- NAVBAR ----- */
+
+header {
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #a7f6fb;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+}
+header nav ul a #title {
+    color: #FFF;
+    background-color: #1c4454;
+    color: #FFF;
+    font-family: 'Lobster Two', cursive;
+    font-size: 3em;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 0 0 10px 10px;
+}
+header nav ul a #title:hover {
+    color: #1c4454;
+    background-color: #FFF;
+    transition: 1s;
+}
+header nav ul a {
+    text-decoration: none;
+}
+header nav ul a .navtext {
+    display: flex;
+    justify-content: center;
+    color: #1c4454;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #FFF;
+    border-radius: 0 0 5px 5px;
+}
+header nav ul a:hover .navtext {
+    color: #FFF;
+    background-color: #1c4454;
+    color: #FFF;
+    transition: 1s;
+}
+
+/* ---- CONTENU -----*/
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Lobster Two', cursive;
+    color: #38b5c1;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 35px;
+    color: #1c4454;
+}
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: #0f1a19;
+    margin-bottom: 10px;
+}
+section {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+    color: #222;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+navbar {
+    width: 8%;
+    height: 40%;
+    display: flex;
+    margin-top: 3%;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    margin-top: 0px;
+    width: 100%;
+    background-color: #a7f6fb;
+    height: 8em;
+    display: flex;
+}
+/* ---- LES EXERCICES --- */
+/*#presentation, #order, #distri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.sous-titre {
+  font-style: italic;
+  font-size: 15px;
+}
+
+#exo1, #exo2, #exo3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+    color: #000;
+}
+.image-centre {
+  text-align: center;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.image-centre:hover {
+   transform: scale(1.1);
+}
+img {
+  width: 40%;
+  height: auto;
+}

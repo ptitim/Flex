@@ -98,6 +98,13 @@ section span {
   font-style: italic;
   font-size: 15px;
 }
+section a {
+  color: #000;
+}
+section a:hover {
+  color: #000;
+  text-decoration: none;
+}
 navbar {
     width: 8%;
     height: 40%;

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="styleexo.css">
+    <link rel="stylesheet" href="coloration_syntaxique.css">
+    <meta charset="utf-8">
+
+    <title>Les exercices sur le Flexbox</title>
+</head>
+
+<body class="thing" onload="init()">
+
+    <header id="haut">
+        <div id="header" class="container">
+            <nav>
+                <ul>
+                    <a class="test" href="index.html" onclick="autoScroll('haut')">
+                        <li class="animated fadeIn"><span id="title">FlexBox</span></li>
+                    </a>
+
+                    <a class="test" onclick="autoScroll('presentation')">
+                        <li class="animated fadeIn"><span class="navtext">Exercice 1</span></li>
+                    </a>
+
+                    <a class="test" onclick="autoScroll('order')">
+                        <li class="animated fadeIn"><span class="navtext">Exercice 2</span></li>
+                    </a>
+
+                    <a class="test" onclick="autoScroll('distri')">
+                        <li class="animated fadeIn"><span class="navtext">Exercice 3</span></li>
+                    </a>
+
+                    <a class="test" onclick="autoScroll('flexibiliter')">
+                    </a>
+
+                    <a href="indexexo.html" target="_blank">
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <img id="img" src="data/eCommerce-Header-5.png" />
+
+    <section id="presentation">
+        <h1>Exercice 1 </h1>
+        <div class="image-centre">
+          <a href="exo1/Capture.PNG" target="_blank"><img src="exo1/Capture.PNG"/></a>
+        </div>
+        <div id="exo1">
+            <span class="sous-titre">Clickity-clic pour voir en plus grand dans un nouvel onglet !</span>
+        </div>
+        <p>Reproduire l'image ci-dessus en modifiant les propriétés <strong>flex-direction, flex-wrap, justify-content et align-items</strong> : Cliquez <a href="http://codepen.io/anon/pen/RGKKWY?editors=1100" target="_blank">ici</a> pour vous exercer !</p>
+    </section>
+
+    <section id="order">
+        <h1>Exercice 2</h1>
+        <div class="image-centre">
+          <a href="exo2/exo2solution_720.png" target="_blank"><img src="exo2/exo2solution_720.png"/></a>
+        </div>
+        <div id="exo2">
+          <span class="sous-titre">Clickity-clic pour voir en plus grand dans un nouvel onglet !</span>
+        </div>
+        <p>Reproduire l'image ci-dessus en modifiant la propriété <strong>order</strong> : Cliquez <a href="http://codepen.io/anon/pen/VKPOEz" target="_blank">ici</a> pour vous exercer !</p>
+    </section>
+
+    <section id="distri">
+      <h1>Exercice 3</h1>
+      <div class="image-centre">
+        <a href="exo3/exo3.png" target="_blank"><img src="exo3/exo3.png"/></a>
+      </div>
+      <div id="exo3">
+        <span class="sous-titre">Clickity-clic pour voir en plus grand dans un nouvel onglet !</span>
+      </div>
+      <p>Reproduire l'image ci-dessus en modifiant les propriétés <strong>align-items, justify-content et flex-wrap</strong> : Cliquez <a href="http://codepen.io/anon/pen/ampArm" target="_blank">ici</a> pour vous exercer !</p>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <!--importation des script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
+    <script src="testgsap.js" charset="utf-8"></script>
+    <script src="script.js"></script>
+    <script src="exemple.js"></script>
+</body>
+
+</html>
